@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Play } from '../icons';
+import { ArrowRight, Play } from 'lucide-react';
 
 const Hero = () => {
   const scrollToServices = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-animated grid-pattern">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-animated grid-pattern pt-16">
       {/* Animated Background */}
       <div className="particles"></div>
       
