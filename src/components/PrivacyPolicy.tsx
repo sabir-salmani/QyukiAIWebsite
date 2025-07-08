@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Mail, Phone, MapPin } from 'lucide-react';
+import { Shield, Mail, Phone, MapPin } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const PrivacyPolicy = () => {

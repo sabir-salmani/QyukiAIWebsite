@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessageSquare, Sparkles, Download, ArrowRight } from 'lucide-react';
+import { MessageSquare, Sparkles, Download, ArrowRight } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const HowItWorks = () => {

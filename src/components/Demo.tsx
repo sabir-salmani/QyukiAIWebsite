@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Wand2, Loader2, CheckCircle } from 'lucide-react';
+import { Wand2, Loader2, CheckCircle } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Demo = () => {

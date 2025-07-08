@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, GraduationCap, Film, Building } from 'lucide-react';
+import { Briefcase, GraduationCap, Film, Building } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const UseCases = () => {

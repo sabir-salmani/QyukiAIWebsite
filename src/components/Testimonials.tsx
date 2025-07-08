@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Testimonials = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle, User, MessageSquare } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, User, MessageSquare } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Contact = () => {

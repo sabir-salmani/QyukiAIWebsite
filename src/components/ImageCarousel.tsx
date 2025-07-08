@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Sparkles } from '../icons';
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

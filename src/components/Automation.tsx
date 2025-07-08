@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, Workflow, Clock, BarChart3, Shield, Cpu, ArrowRight, CheckCircle, Target, Users, TrendingUp, DollarSign, Globe, Megaphone, Bot, Settings } from 'lucide-react';
+import { Zap, Workflow, Clock, BarChart3, Shield, Cpu, ArrowRight, CheckCircle, Target, Users, TrendingUp, DollarSign, Globe, Megaphone, Bot, Settings } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Automation = () => {

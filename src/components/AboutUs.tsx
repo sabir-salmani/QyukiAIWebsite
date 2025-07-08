@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Users, Lightbulb, Award, ArrowRight } from 'lucide-react';
+import { Target, Users, Lightbulb, Award, ArrowRight } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const AboutUs = () => {

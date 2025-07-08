@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play } from '../icons';
 
 const Hero = () => {
   const scrollToServices = () => {

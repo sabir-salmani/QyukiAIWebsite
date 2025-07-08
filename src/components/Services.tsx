@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Video, Mic, Code, ArrowRight, Zap, Globe, TrendingUp, DollarSign, Users, BarChart3, Megaphone, Box, Volume2 } from 'lucide-react';
+import { Image, Video, Mic, Code, ArrowRight, Zap, Globe, TrendingUp, DollarSign, Users, BarChart3, Megaphone, Box, Volume2 } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const Services = () => {

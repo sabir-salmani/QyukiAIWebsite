@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Mail, ArrowRight, Twitter, Github, Linkedin } from 'lucide-react';
+import { Sparkles, Mail, ArrowRight, Twitter, Github, Linkedin } from '../icons';
 
 const Footer = () => {
   const footerLinks = {

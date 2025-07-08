@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles } from '../icons';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
