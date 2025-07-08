@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Sparkles } from '../icons';
+import { ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 
 const ImageCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -94,13 +94,13 @@ const ImageCarousel = () => {
               loading="lazy"
             />
             
-            {/* Image info overlay */}
-            <div className="absolute bottom-8 left-8 right-8 z-20">
+            {/* Image info overlay - adjusted for mobile */}
+            <div className="absolute bottom-16 md:bottom-8 left-4 md:left-8 right-4 md:right-8 z-20">
               <div className="max-w-md">
-                <h3 className="font-poppins font-semibold text-2xl md:text-3xl text-white mb-2 drop-shadow-lg">
+                <h3 className="font-poppins font-semibold text-xl md:text-2xl lg:text-3xl text-white mb-1 md:mb-2 drop-shadow-lg">
                   {image.title}
                 </h3>
-                <p className="text-gray-200 text-lg drop-shadow-md">
+                <p className="text-gray-200 text-sm md:text-lg drop-shadow-md">
                   {image.description}
                 </p>
               </div>
@@ -109,30 +109,30 @@ const ImageCarousel = () => {
         ))}
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation Buttons - adjusted for mobile */}
       <button
         onClick={goToPrevious}
-        className="absolute left-6 top-1/2 transform -translate-y-1/2 z-30 p-4 bg-black/30 hover:bg-black/50 backdrop-blur-sm rounded-full transition-all duration-200 hover:scale-110 border border-white/20"
+        className="absolute left-4 md:left-6 top-1/2 transform -translate-y-1/2 z-30 p-3 md:p-4 bg-black/30 hover:bg-black/50 backdrop-blur-sm rounded-full transition-all duration-200 hover:scale-110 border border-white/20"
         aria-label="Previous image"
       >
-        <ChevronLeft className="h-8 w-8 text-white" />
+        <ChevronLeft className="h-6 w-6 md:h-8 md:w-8 text-white" />
       </button>
       
       <button
         onClick={goToNext}
-        className="absolute right-6 top-1/2 transform -translate-y-1/2 z-30 p-4 bg-black/30 hover:bg-black/50 backdrop-blur-sm rounded-full transition-all duration-200 hover:scale-110 border border-white/20"
+        className="absolute right-4 md:right-6 top-1/2 transform -translate-y-1/2 z-30 p-3 md:p-4 bg-black/30 hover:bg-black/50 backdrop-blur-sm rounded-full transition-all duration-200 hover:scale-110 border border-white/20"
         aria-label="Next image"
       >
-        <ChevronRight className="h-8 w-8 text-white" />
+        <ChevronRight className="h-6 w-6 md:h-8 md:w-8 text-white" />
       </button>
 
-      {/* Indicators */}
-      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 z-30 flex space-x-4">
+      {/* Indicators - repositioned for mobile */}
+      <div className="absolute bottom-6 md:bottom-24 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3 md:space-x-4">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-4 h-4 rounded-full transition-all duration-300 border-2 ${
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-all duration-300 border-2 ${
               index === currentIndex 
                 ? 'bg-white border-white scale-125' 
                 : 'bg-transparent border-white/60 hover:border-white hover:bg-white/20'
@@ -155,8 +155,8 @@ const ImageCarousel = () => {
         </div>
       </div> */}
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 animate-bounce">
+      {/* Scroll indicator - hidden on mobile to avoid clutter */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 animate-bounce hidden md:block">
         <div className="w-1 h-8 bg-white/40 rounded-full">
           <div className="w-1 h-4 bg-white rounded-full animate-pulse"></div>
         </div>
