@@ -12,6 +12,7 @@ import AboutUs from './components/AboutUs';
 import Automation from './components/Automation';
 import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Careers from './components/Careers';
 
 function App() {
   // Simple routing logic - in a real app, you'd use React Router
@@ -52,6 +53,16 @@ function App() {
       <div className="min-h-screen">
         <Navigation />
         <PrivacyPolicy />
+        <Footer />
+      </div>
+    );
+  }
+
+  if (currentPath === '/Careers') {
+    return (
+      <div className="min-h-screen">
+        <Navigation />
+        <Careers />
         <Footer />
       </div>
     );
