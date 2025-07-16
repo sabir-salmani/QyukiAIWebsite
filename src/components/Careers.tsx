@@ -29,9 +29,27 @@ const Careers = () => {
   return (
     <main className="min-h-screen bg-black" role="main">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-animated grid-pattern pt-24" aria-labelledby="careers-heading">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in" ref={ref}>
+      {/* <section className="section-padding bg-gradient-animated grid-pattern pt-24" aria-labelledby="careers-heading"> */}
+      
+         {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in" ref={ref}>
           <h1 id="careers-heading" className="font-poppins font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-6">
+            Join <span className="text-gradient">Qyuki AI</span>
+          </h1>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            We're building a team of curious minds, bold creators, and future thinkers.
+            Come work on breakthrough AI technology that empowers storytellers everywhere.
+          </p>
+        </div>
+      </section> */}
+      <section
+        className="bg-gradient-animated grid-pattern pt-[120px] pb-16 scroll-mt-[80px]"
+        aria-labelledby="careers-heading"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-in" ref={ref}>
+          <h1
+            id="careers-heading"
+            className="font-poppins font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-6"
+          >
             Join <span className="text-gradient">Qyuki AI</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">

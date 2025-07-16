@@ -99,7 +99,9 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-animated grid-pattern pt-24">
+      {/* <section className="section-padding bg-gradient-animated grid-pattern pt-24"> */}
+      <section className="bg-gradient-animated grid-pattern pt-[120px] pb-16 scroll-mt-[80px]">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div ref={ref} className="text-center fade-in">
             <h1 className="font-poppins font-bold text-4xl md:text-6xl lg:text-7xl text-white mb-6">
