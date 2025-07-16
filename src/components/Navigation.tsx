@@ -55,7 +55,13 @@ const Navigation = () => {
               onClick={() => window.location.href = '/'}
               className="flex items-center"
             >
-              <Sparkles className="h-8 w-8 text-gradient mr-2" />
+              {/* <Sparkles className="h-8 w-8 text-gradient mr-2" /> */}
+              <img
+                src="https://aiwebsite1.s3.us-east-1.amazonaws.com/logo-1.png"
+                alt="Qyuki AI logo"
+                className="h-8 w-auto mr-2"
+              />
+              
               <span className="font-poppins font-bold text-xl text-white">
                 Qyuki AI
               </span>
