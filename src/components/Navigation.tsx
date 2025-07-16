@@ -19,8 +19,9 @@ const Navigation = () => {
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Use Cases', href: '#use-cases' },
     { name: 'Demo', href: '#demo' },
-    { name: 'About Us', href: '/about' },
     { name: 'Automation', href: '/automation' },
+    { name: 'Careers', href: '/Careers' },
+    { name: 'About Us', href: '/about' },
   ];
 
   const handleNavClick = (href: string) => {
