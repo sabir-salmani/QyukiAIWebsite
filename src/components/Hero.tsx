@@ -56,13 +56,13 @@ const Hero = () => {
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
             </button>
             
-            <button 
+            {/* <button 
               onClick={scrollToDemo}
               className="group btn-secondary flex items-center"
             >
               <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
               Get a Demo
-            </button>
+            </button> */}
           </div>
 
           {/* Stats */}
