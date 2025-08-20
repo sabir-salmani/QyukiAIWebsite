@@ -118,7 +118,7 @@ const UseCases = () => {
                   ))}
                 </div>
                 
-                <button className="btn-primary">
+                <button className="btn-primary" onClick={() => window.location.href = 'https://n8n.deepsoch.io/form/e377705d-a9dc-40f9-93cd-2be143537f2b'}>
                   Explore Solutions
                 </button>
               </div>

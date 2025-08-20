@@ -183,7 +183,7 @@ const AboutUs = () => {
                 View Careers
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
-              <button className="btn-secondary">
+              <button className="btn-secondary" onClick={() => window.location.href = '/contact'}>
                 Contact Us
               </button>
             </div>

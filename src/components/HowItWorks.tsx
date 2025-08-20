@@ -119,7 +119,7 @@ const HowItWorks = () => {
             <p className="text-gray-400 mb-6">
               Join thousands of creators who are already transforming their ideas into reality
             </p>
-            <button className="btn-primary hover-glow flex items-center justify-center mx-auto">
+            <button className="btn-primary hover-glow flex items-center justify-center mx-auto" onClick={() => window.location.href = 'https://n8n.deepsoch.io/form/e377705d-a9dc-40f9-93cd-2be143537f2b'}>
               Schedule Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>

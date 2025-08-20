@@ -156,7 +156,7 @@ const Automation = () => {
               optimize workflows, and drive growth with our enterprise-grade solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary flex items-center justify-center">
+              <button className="btn-primary flex items-center justify-center" onClick={() => window.location.href = 'https://n8n.deepsoch.io/form/e377705d-a9dc-40f9-93cd-2be143537f2b'}>
                 Schedule Demo
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>

@@ -205,10 +205,10 @@ const Services = () => {
                   ))}
                 </div>
                 
-                <button className="group/btn flex items-center text-gradient font-medium hover:neon-text transition-all duration-200 text-sm">
+                {/* <button className="group/btn flex items-center text-gradient font-medium hover:neon-text transition-all duration-200 text-sm">
                   Learn More
                   <ArrowRight className="ml-2 h-3 w-3 group-hover/btn:translate-x-1 transition-transform duration-200" />
-                </button>
+                </button> */}
               </div>
             ))}
           </div>
@@ -228,7 +228,7 @@ const Services = () => {
                 Start Free Trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button> */}
-              <button className="btn-secondary">
+              <button className="btn-secondary" onClick={() => window.location.href = 'https://n8n.deepsoch.io/form/e377705d-a9dc-40f9-93cd-2be143537f2b'}>
                 Schedule Demo
               </button>
             </div>
