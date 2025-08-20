@@ -83,7 +83,7 @@ const AboutUs = () => {
             </div>
             <div className="fade-in">
               <img
-                src="https://aiwebsite1.s3.us-east-1.amazonaws.com/image1.jpg?auto=compress&cs=tinysrgb&w=600"
+                src="https://aiwebsite1.s3.us-east-1.amazonaws.com/office-main.jpg?auto=compress&cs=tinysrgb&w=600"
                 alt="Team collaboration"
                 className="w-full h-96 object-cover rounded-2xl shadow-lg"
               />
@@ -129,7 +129,7 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="section-padding bg-gray-900">
+      {/* <section className="section-padding bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 fade-in">
             <h2 className="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-4">
@@ -165,7 +165,7 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="section-padding bg-black">

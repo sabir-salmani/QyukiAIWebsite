@@ -162,10 +162,10 @@ const Services = () => {
                   ))}
                 </div>
                 
-                <button className="group/btn flex items-center text-gradient font-medium hover:neon-text transition-all duration-200 text-sm">
+                {/* <button className="group/btn flex items-center text-gradient font-medium hover:neon-text transition-all duration-200 text-sm">
                   Try Now
                   <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
-                </button>
+                </button> */}
               </div>
             ))}
           </div>
@@ -224,10 +224,10 @@ const Services = () => {
               Join thousands of creators and businesses who have revolutionized their content creation with our AI-powered tools.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary flex items-center justify-center hover-glow">
+              {/* <button className="btn-primary flex items-center justify-center hover-glow">
                 Start Free Trial
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </button>
+              </button> */}
               <button className="btn-secondary">
                 Schedule Demo
               </button>

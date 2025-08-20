@@ -5,7 +5,7 @@ import Services from './components/Services';
 import ImageCarousel from './components/ImageCarousel';
 import HowItWorks from './components/HowItWorks';
 import UseCases from './components/UseCases';
-import Demo from './components/Demo';
+//import Demo from './components/Demo';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
@@ -77,7 +77,7 @@ function App() {
       <Services />
       <HowItWorks />
       <UseCases />
-      <Demo />
+      {/* <Demo /> */}
       <Testimonials />
       <Footer />
     </div>

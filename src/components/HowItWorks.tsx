@@ -120,7 +120,7 @@ const HowItWorks = () => {
               Join thousands of creators who are already transforming their ideas into reality
             </p>
             <button className="btn-primary hover-glow flex items-center justify-center mx-auto">
-              Try It Now
+              Schedule Demo
               <ArrowRight className="ml-2 h-5 w-5" />
             </button>
           </div>

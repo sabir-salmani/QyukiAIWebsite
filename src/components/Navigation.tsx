@@ -18,9 +18,9 @@ const Navigation = () => {
     { name: 'AI Services', href: '#services' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Use Cases', href: '#use-cases' },
-    { name: 'Demo', href: '#demo' },
+    //{ name: 'Demo', href: '#demo' },
     { name: 'Automation', href: '/automation' },
-    { name: 'Careers', href: '/Careers' },
+    //{ name: 'Careers', href: '/Careers' },
     { name: 'About Us', href: '/about' },
   ];
 
