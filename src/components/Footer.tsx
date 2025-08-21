@@ -458,22 +458,22 @@ const Footer: React.FC = () => {
   const [message, setMessage] = useState("");
 
   const footerLinks = {
-    Product: [
-      { name: "Text to Image", href: "#services" },
-      { name: "Image to Video", href: "#services" },
-      { name: "Audio AI", href: "#services" },
-      { name: "API Integration", href: "#services" },
+    Details: [
+      // { name: "Text to Image", href: "#services" },
+      // { name: "Image to Video", href: "#services" },
+      // { name: "Audio AI", href: "#services" },
+      // { name: "API Integration", href: "#services" },
       { name: "Pricing", href: "#pricing" },
     ],
     Company: [
       { name: "About Us", href: "/about" },
-      { name: "Blog", href: "#" },
-      { name: "Careers", href: "/careers" },
+      // { name: "Blog", href: "#" },
+      // { name: "Careers", href: "/careers" },
       { name: "Contact", href: "/contact" },
     ],
     Legal: [
       { name: "Privacy Policy", href: "/privacy" },
-      { name: "Terms of Service", href: "#" },
+      // { name: "Terms of Service", href: "#" },
     ],
   } as const;
 
