@@ -741,7 +741,7 @@ const Footer: React.FC = () => {
   const footerLinks = {
     Details: [
       // changed to "/#pricing" so it routes to Home and then ScrollToTop handles the hash
-      { name: "Pricing", href: "/#pricing" },
+      { name: "Pricing", href: "/pricing" },
     ],
     Company: [
       { name: "About Us", href: "/about" },

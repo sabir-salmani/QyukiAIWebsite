@@ -256,6 +256,7 @@ import Automation from './components/Automation';
 import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import Careers from './components/Careers';
+import Pricing from './components/Pricing'; // <-- added
 
 import ScrollToTop from './components/ScrollToTop';
 
@@ -298,6 +299,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<><Navigation /><AboutUs /></>} />
         <Route path="/automation" element={<><Navigation /><Automation /></>} />
+        <Route path="/pricing" element={<><Navigation /><Pricing /></>} /> {/* <-- added */}
         <Route path="/contact" element={<><Navigation /><Contact /></>} />
         <Route path="/privacy" element={<><Navigation /><PrivacyPolicy /></>} />
         <Route path="/careers" element={<><Navigation /><Careers /></>} />
