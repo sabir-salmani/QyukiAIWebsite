@@ -59,7 +59,7 @@ const Navigation = () => {
               {/* <Sparkles className="h-8 w-8 text-gradient mr-2" /> */}
               <img
                 // src="https://aiwebsite1.s3.us-east-1.amazonaws.com/logo-1.png"
-                src="/Public/Favicon.png"
+                src="/Public/favicon.png"
                 alt="Qyuki AI logo"
                 className="h-8 w-auto mr-2"
               />
