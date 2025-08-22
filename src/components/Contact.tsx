@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle, User, MessageSquare } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
+const N8N_WEBHOOK = "https://n8n.deepsoch.io/webhook-test/test";
 const Contact = () => {
   const ref = useScrollAnimation();
   const [formData, setFormData] = useState({
@@ -21,42 +22,90 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        subject: '',
-        message: ''
-      });
-    }, 2000);
-  };
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false);
+  //     setIsSubmitted(true);
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       company: '',
+  //       subject: '',
+  //       message: ''
+  //     });
+  //   }, 2000);
+  // };
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    // build the payload n8n will receive
+    const payload = {
+      name: formData.name,
+      email: formData.email,
+      company: formData.company,
+      subject: formData.subject,
+      message: formData.message,
+      source: "website-contact",
+      timestamp: new Date().toISOString(),
+    };
+
+    const res = await fetch(N8N_WEBHOOK, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      // surface a readable error if n8n returns non-2xx
+      const txt = await res.text().catch(() => "");
+      throw new Error(`n8n responded ${res.status} ${txt}`);
+    }
+
+    // success UI
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      subject: "",
+      message: "",
+    });
+  } catch (err) {
+    console.error(err);
+    setIsSubmitting(false);
+    // keep your existing error UI if you have one; or set a message state here
+    alert("Couldn’t send your message. Please try again in a bit.");
+  }
+};
+
 
   const contactInfo = [
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'sabir.salmani@qyuki.com',
+      details: 'ai@qyuki.com',
       description: 'Send us an email anytime'
     },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      details: '+91 9167166088',
-      description: 'Mon-Fri from 9am to 6pm'
-    },
+    // {
+    //   icon: Phone,
+    //   title: 'Call Us',
+    //   details: '+91 9167166088',
+    //   description: 'Mon-Fri from 9am to 6pm'
+    // },
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: 'Andheri (E), Mumbai',
-      description: 'Come say hello at our office'
+      details: 'Qyuki Studios',
+      description: '402/404, 4th floor, Tower No. 2, STAR HUB COMPLEX, near Itc Maratha, Sahar Village, Andheri East, Mumbai, Maharashtra 400099'
     }
   ];
 
@@ -118,7 +167,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="section-padding bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8 mb-16">
             {contactInfo.map((info, index) => (
               <div
                 key={info.title}
