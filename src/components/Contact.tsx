@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle, User, MessageSquare } from '../icons';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
-const N8N_WEBHOOK = "https://n8n.deepsoch.io/webhook-test/test";
+const N8N_WEBHOOK = "https://n8n.deepsoch.io/webhook/message";
 const Contact = () => {
   const ref = useScrollAnimation();
   const [formData, setFormData] = useState({
