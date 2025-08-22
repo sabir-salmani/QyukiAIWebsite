@@ -915,20 +915,20 @@ const Footer: React.FC = () => {
               Creative Media, Amplified by AI. Transform your creative workflow
               with our AI tools for image, video, and audio generation.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
+            {/* <div className="flex space-x-4"> */}
+              {/* {socialLinks.map((social) => ( */}
+                {/* <a */}
+                  {/* key={social.label} */}
+                  {/* href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 bg-gray-900 border border-gray-700 rounded-lg hover:border-gray-600 hover:bg-gray-800 transition-colors duration-200"
-                  aria-label={social.label}
-                >
-                  <social.icon className="h-5 w-5 text-gray-400 hover:text-white" />
-                </a>
-              ))}
-            </div>
+                  aria-label={social.label} */}
+                {/* >
+                  <social.icon className="h-5 w-5 text-gray-400 hover:text-white" /> */}
+                {/* </a>
+              ))} */}
+            {/* </div> */}
           </div>
 
           {/* Footer Links */}
