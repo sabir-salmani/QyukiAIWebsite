@@ -223,7 +223,7 @@ function ScheduleDemoModal({ open, onClose }) {
     try {
       setStatus('loading');
       setMessage('');
-      const res = await fetch('https://n8n.deepsoch.io/webhook-test/scheduledemo', {
+      const res = await fetch('https://n8n.deepsoch.io/webhook/scheduledemo', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
